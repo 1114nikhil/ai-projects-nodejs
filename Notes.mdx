@@ -1,10 +1,19 @@
 ## Build AI project with Node.js,OpenAI, LAngChain,Vector DB, HuggingFace, TypeScript 
 
-### Open AI setup
+## 1. OpenAI fundamentals
 
+### 1.1. Open AI setup
 -OpenAI key setup
     - https://platform.openai.com/
 -Create a node Npm project
     -`npm init -y`
     -`npm install openai`
 -run a prompt
+
+### 1.2. TypeScript setup
+- `npm i -D typescript ts-node @types/node`
+-`npx tsc --init`
+
+#Just put `start` startts or startjs will not work
+    - "startjs": "node --env-file=.env src/index.js",
+    - "start": "node -r ts-node/register --env-file=.env src/index.ts",

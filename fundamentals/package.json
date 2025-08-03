@@ -2,8 +2,10 @@
   "name": "fundamentals",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start":"node --env-file=.env src/index.js",
+    "startjs": "node --env-file=.env src/index.js",
+    "start": "node -r ts-node/register --env-file=.env src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +14,10 @@
   "description": "",
   "dependencies": {
     "openai": "^5.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
