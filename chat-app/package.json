@@ -1,24 +1,22 @@
 {
-  "name": "fundamentals",
+  "name": "chat-app",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
-    "startjs": "node --env-file=.env src/index.js",
-    "start": "node -r ts-node/register --env-file=../.env src/index.ts",
+    "start": "node -r ts-node/register --env-file=../.env src/basic/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "openai": "^5.11.0",
-    "tiktoken": "^1.0.21"
-  },
   "devDependencies": {
-    "@types/node": "^24.1.0",
+    "@types/node": "^24.2.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "openai": "^5.12.0",
+    "tiktoken": "^1.0.21"
   }
 }
