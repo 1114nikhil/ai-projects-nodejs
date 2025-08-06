@@ -22,7 +22,6 @@ const openai = new OpenAI({apiKey:process.env.OPENAI_API_KEY});
 // }
 // #endregion
 
-
 // #region check no. of tokens
 // const encodePrompt =(prompt: string) =>{
 //     const encoder =encoding_for_model("gpt-4.1-nano-2025-04-14")
@@ -57,4 +56,5 @@ const response = await openai.responses.create({
 console.log(response.output_text);
 }
 // #endregion
+
 main();
