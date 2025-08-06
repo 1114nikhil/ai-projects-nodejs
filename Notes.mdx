@@ -14,10 +14,31 @@
 - `npm i -D typescript ts-node @types/node`
 -`npx tsc --init`
 
-#Just put `start` startts or startjs will not work
+## Just put `start` startts or startjs will not work
     - "startjs": "node --env-file=.env src/index.js",
     - "start": "node -r ts-node/register --env-file=.env src/index.ts",
 
 
-#to check no. of tokens in nodejs project
+## to check no. of tokens in nodejs project
     -`npm i tiktoken`
+
+## Roles
+    -system
+    -user
+    -asistance
+
+## OpenA api and playground parameters
+    - Temperature
+        higher Temperature will results in more random predections, lower Temperature will results in more Predictable predictions
+        recomended range : 0.1 to 1.0
+    - Top P
+        higher top_p will results in more diverse pridiction,while a lower top_p will results in more focused predictions
+        recomended range: 0.1 to 0.9
+    - Maximum Tokens
+        contorls the max no. of output tokens that model will generate in a single response
+        recomended range : 16 to 2048
+        max_output_tokens': integer below minimum value. Expected a value >= 16, but got 10 instead.
+    - Frequnecy panality
+        parameter controls the modal tendecy to repeat  token  that have already been generated,higher 
+    - n
+        number of choises
