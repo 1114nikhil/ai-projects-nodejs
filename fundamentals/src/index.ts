@@ -38,7 +38,7 @@ const openai = new OpenAI({apiKey:process.env.OPENAI_API_KEY});
 // 3. assistance : ai sends the response
 const main =async ()=>{
     //  Define the prompt
-    const prompt = "Hi How are you?"
+    const prompt = "Hi How are you?";
 const response = await openai.responses.create({
     model: "gpt-4.1-nano-2025-04-14" ,
     input: [
