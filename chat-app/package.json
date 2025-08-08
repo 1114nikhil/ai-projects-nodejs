@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "startchat": "node -r ts-node/register --env-file=../.env src/basic/index.ts",
-    "start": "node -r ts-node/register --env-file=../.env src/function_calling/index.ts",
+    "startfncall": "node -r ts-node/register --env-file=../.env src/function_calling/index.ts",
+    "start": "node -r ts-node/register --env-file=../.env src/train_resrvation_assistance/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
