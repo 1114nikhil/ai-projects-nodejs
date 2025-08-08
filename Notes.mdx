@@ -67,3 +67,29 @@
         - to contorl the length of the response
         - to avoid error  due to large context of gpt-4.1-nano-2025-04-14 has limit of 1,047,576 context window
 
+### 3 Openai Function calling and api tools
+    - Why Functions calling?
+        - Chatgpt only has access to the Trained data set e.g. (gpt-4.1-nano-2025-04-14 model has a knowledge cutoff date of April 2023)
+        - to get the Latest data we can use Function calling
+            e.g.
+                what the latest price of Bitcoin or What is the date Today?
+
+                to solve this we can call function calling.So the OpenAI can be prompted to call function calling to get the latest data
+        - so we can do 
+            - access the latest data or real time data 
+            - modify/mutation of data ex: in a DB
+            - act like a live chat bot which can interact user with the real time
+    Topics to cover:
+        - setup function calling
+        - parameters of the function
+        - multiple functions
+        - project for Demo
+
+## 3.1 Setup function calling
+    - Configure the function calling
+    - Decide which function to call
+    - Call the function
+    - call openAI with the function response
+
+
+
