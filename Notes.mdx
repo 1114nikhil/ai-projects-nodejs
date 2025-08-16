@@ -108,3 +108,40 @@
             - bookTicket(trainName,date)
         - Context
 
+### 5. Embedding and Similarity
+    - wht are Embaddings?
+    - what are open AI embeddings?
+    - what are Similarity?
+    - Project: Recommedation System
+
+### 5.1 What are Embeddings?
+    - Embeddings are numerical representations of data Ex.text,images,audio etc.
+    - Emabedding takes the form of vector ie alist of numbers
+    - Embadding latent space
+        - Embeddings are used to represent the data in a latent space
+        - Latent space is a high-dimensional space where similar data points are close to each other
+### 5.2 What are Similarity?
+    - Similarity is a measure of how similar two data points are
+    - Similarity is used to find the most similar data points in the latent space
+    - Similarity can be measured using various metrics like cosine similarity, Euclidean distance, etc.
+    to find the similarity 
+    - Dot product
+        - Dot product is a measure of similarity between two vectors
+        - It is calculated by multiplying the corresponding elements of the vectors and summing the results
+        - Higher dot product indicates higher similarity between the vectors
+    - Cosine similarity
+        - Cosine similarity is a measure of similarity between two vectors based on the cosine of the angle between them
+        - It is calculated by dividing the dot product of the vectors by the product
+          of their magnitudes
+        - Cosine similarity ranges from -1 to 1, where 1 indicates perfect similarity
+        - Cosine similarity is often used in natural language processing tasks to measure the similarity between text
+          documents or sentences
+
+ 
+ ## Emabedding models:
+    - OpenAI provides various embedding models like text-embedding-ada-002, text-embedding-babbage-001, etc.
+    - These models can be used to generate embeddings for text data
+    - The embeddings can be used for various tasks like similarity search, clustering, etc.
+
+## OpenAI Emabedding
+    openai.embeddings.create
