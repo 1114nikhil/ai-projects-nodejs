@@ -17,12 +17,12 @@ const openai = new OpenAI();
 // generateEmbeddings(["Hello", "world"]);
 
 
-type DataWithEmbeddings ={
+export type DataWithEmbeddings ={
     input:string,
-    emmbeddings:number[]
+    embeddings:number[]
 };
 
-const generateEmbeddings = async (input: string|string []) => {
+export const generateEmbeddings = async (input: string|string []) => {
     const response = await openai.embeddings.create({
         model: "text-embedding-3-small",
         input: input
@@ -31,7 +31,7 @@ const generateEmbeddings = async (input: string|string []) => {
     return response;
 }
 
-const loadInputJson= <T>(fileName:string):T =>{
+export const loadInputJson= <T>(fileName:string):T =>{
     const path= join(__dirname,fileName);
     const rawInputData = readFileSync(path);
     return JSON.parse(rawInputData.toString())
@@ -50,10 +50,10 @@ const main =async ()=>{
     const embeddings= await generateEmbeddings(input);
     const dataWithEmbeddings:DataWithEmbeddings[]=input.map((input,index)=>({
         input,
-        emmbeddings:embeddings.data[index]!.embedding
+        embeddings:embeddings.data[index]!.embedding
     }))
-    saveEmbaddingToJson(dataWithEmbeddings,"dataWithEmbeddings")
+    saveEmbaddingToJson(dataWithEmbeddings,"dataWithEmbeddings.json")
 
 }
-main();
-generateEmbeddings(["Hello", "world"]);
+// main();
+// generateEmbeddings(["Hello", "world"]); 

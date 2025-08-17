@@ -6,7 +6,8 @@
     "startchat": "node -r ts-node/register --env-file=../.env src/basic/index.ts",
     "startfncall": "node -r ts-node/register --env-file=../.env src/function_calling/index.ts",
     "startTRA": "node -r ts-node/register --env-file=../.env src/train_resrvation_assistance/index.ts",
-    "start": "node -r ts-node/register --env-file=../.env src/embaddings/data.ts",
+    "startembaddings": "node -r ts-node/register --env-file=../.env src/embaddings/data.ts",
+    "start": "node -r ts-node/register --env-file=../.env src/embaddings/similarity.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
