@@ -5,7 +5,7 @@ const dotProduct= (a:number[],b:number[])=>{
 }
 
 // angle between vector
-const cosineSimilarity =(a:number[],b:number[])=>{
+export const cosineSimilarity =(a:number[],b:number[])=>{
     const dot = dotProduct(a,b)
     const normA = Math.sqrt(dotProduct(a,a))
     const normB = Math.sqrt(dotProduct(b,b))
@@ -28,6 +28,10 @@ const main =async ()=>{
             data!.embeddings,
             inputEmbeddings.data[0]!.embedding
         )
+        // similarity:dotProduct(
+        //     data!.embeddings,
+        //     inputEmbeddings.data[0]!.embedding
+        // )
     }));
 
 

@@ -7,7 +7,8 @@
     "startfncall": "node -r ts-node/register --env-file=../.env src/function_calling/index.ts",
     "startTRA": "node -r ts-node/register --env-file=../.env src/train_resrvation_assistance/index.ts",
     "startembaddings": "node -r ts-node/register --env-file=../.env src/embaddings/data.ts",
-    "start": "node -r ts-node/register --env-file=../.env src/embaddings/similarity.ts",
+    "startsimilarity": "node -r ts-node/register --env-file=../.env src/embaddings/similarity.ts",
+    "start": "node -r ts-node/register --env-file=../.env src/embaddings/foodRecomendation/foodRecomendation.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

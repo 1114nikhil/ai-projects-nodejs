@@ -37,7 +37,7 @@ export const loadInputJson= <T>(fileName:string):T =>{
     return JSON.parse(rawInputData.toString())
 }
 
-const saveEmbaddingToJson = (embedding:any,fileName:string)=>{
+export const saveEmbaddingToJson = (embedding:any,fileName:string)=>{
     const embeddingStrings= JSON.stringify(embedding);
     const buffer = Buffer.from(embeddingStrings);
     const path = join(__dirname,fileName);

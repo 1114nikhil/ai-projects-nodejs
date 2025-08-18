@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Croissant",
+    "description": "A flaky, buttery French pastry made from layered yeast-leavened dough, often eaten for breakfast,french"
+  },
+  {
+    "name": "Coq au Vin",
+    "description": "A classic French dish of chicken braised with red wine, mushrooms, onions, and herbs,french"
+  },
+  {
+    "name": "Biryani",
+    "description": "A fragrant Indian rice dish cooked with aromatic spices, basmati rice, and either chicken, mutton, or vegetables,India"
+  },
+  {
+    "name": "Masala Dosa",
+    "description": "A popular South Indian dish consisting of a crispy fermented rice-lentil crepe filled with spiced potato mixture,India"
+  }
+]
